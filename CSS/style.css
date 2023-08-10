@@ -53,17 +53,40 @@ li {
 
 
 .container {
-    width: 1170px;
+    width: 1440px;
     /*позиционирование по центру*/
     margin: 0 auto;
 }
 
-.header {
-    background: url('../img//fons/header-bg.jpg') no-repeat center top / cover;
+/* .header {
+    background: url('../img//fons/header-bg.png') no-repeat center top / cover;
     padding-top: 57px;
     color: #fff;
-    padding-bottom: 322px
+    padding-bottom: 322px;
+    
+} */
+
+.header {
+    position: relative;
+    background: url('../img/fons/header-bg.png') no-repeat center top / cover;
+    padding-top: 57px;
+    color: #fff;
+    z-index: 0;
+    padding-bottom: 322px;
 }
+
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(3, 2, 63, 0.748);
+    /* Здесь можно настроить цвет и прозрачность */
+    z-index: -1;
+}
+
 
 header a {
     color: #fff;
@@ -74,9 +97,19 @@ header a {
     width: 10%;
 }
 
+.nav {
+    display: flex;
+    align-items: center;
+  }
+
+.nav .logo-Wellcom{
+    margin-left: auto;
+    width: 18%;
+
+}
+
 .menu {
     display: flex;
-   
 }
 
 .menu li a {
@@ -93,18 +126,12 @@ header a {
     margin-right: 40px;
 }
 
-.tel {
-    font-size: 17px;
-    margin-left: auto;
-    letter-spacing: 0.1em;
-}
 
-.nav {
-    display: flex;
-    align-items: center;
-}
 
 .offer {
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
     text-transform: uppercase;
     margin-top: 216px;
 }
@@ -112,29 +139,45 @@ header a {
 .offer p {
     font-size: 30px;
     letter-spacing: 0.1em;
-    margin-top: -80px;
+    margin-left: 170px;
+    margin-top: -50px;
 }
 
 .offer h1 {
-    font-size: 100px;
-    margin-bottom: 19px;
-    margin-top: -9px;
+    font-size: 42px;
+    /* margin-bottom: 19px; */
+    margin-top: 40px;
+    margin-left: -30px;
     letter-spacing: 0.02em;
+    justify-content: center;
+    align-items: center;
 }
 
-.span-it{
-font-size: 250px;
+.offer .btn-flex{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.logo-IT{
+    display: flex;
 
 }
+
+.logo-IT-img{
+    width: 200px;
+}
+
+
 .span-text{
-    margin: -40px;
-   
+    
 
 }
 
 /* Z INDEX  */
 
 .btn {
+    justify-content: center;
     display: block;
     font-size: 17px;
     text-align: center;
@@ -144,12 +187,14 @@ font-size: 250px;
     width: 270px;
     transition: all 0.5s ease;
     border-radius: 40px;
+    margin-top: 50px;
     
 }
 
 .btn:hover {
     background: #fff;
     color: #000;
+    
 }
 
 .description {
@@ -199,3 +244,64 @@ font-size: 250px;
 .footer-text p {
     margin-right: 67px;
 }
+
+.span-bolt{
+font-weight: 700;
+}
+
+.custom-list{
+    font-size: 35px;
+    margin-top: 60px;
+    list-style-type: none;
+    /* Убираем стандартные маркеры списка */
+    padding-left: 0;
+    text-align: justify ;
+    /* Убираем отступ слева */
+}
+.custom-list li {
+    margin-bottom: 10px;
+    margin-top: 60px;
+    /* Отступ между пунктами списка */
+    position: relative;
+    /* Позиционируем, чтобы можно было добавить изображение */
+
+}
+
+/* .li-icon-one{
+margin-top: 60px;
+
+list-style-image: url('/IMG/icon/calendar.png');
+}
+
+.li-icon-two{
+margin-top: 60px;
+list-style-image: url('img/icon/time.png');
+}
+
+.li-icon-three{
+margin-top: 60px;
+list-style-image: url('img/icon/online-learning.png');
+} */
+
+.custom-list li::before {
+    content: "";
+    /* Создаем псевдоэлемент для изображения */
+    display: inline-block;
+    width: 100px;
+    /* Размер изображения */
+    height: 100px;
+    background-image: url('/IMG/icon/calendar.png');
+    /* Замените на свою ссылку на изображение */
+    background-size: cover;
+    /* Размер изображения */
+    position: absolute;
+    left: -100px;
+    /* Отступ изображения от текста */
+    top: 2px;
+    /* Выравнивание изображения относительно текста */
+}
+
+
+
+
+
