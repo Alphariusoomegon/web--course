@@ -22,7 +22,7 @@ h6 {
 }
 
 h2 {
-    font-size: 50px;
+    font-size: 100px;
     margin-bottom: 58px;
 }
 
@@ -251,57 +251,75 @@ font-weight: 700;
 
 .custom-list{
     font-size: 35px;
-    margin-top: 60px;
-    list-style-type: none;
+    /* margin-top: 60px; */
+    /* list-style-type: none; */
     /* Убираем стандартные маркеры списка */
     padding-left: 0;
-    text-align: justify ;
+    list-style-type: none;
+    /* text-align: justify ; */
     /* Убираем отступ слева */
 }
 .custom-list li {
-    margin-bottom: 10px;
-    margin-top: 60px;
-    /* Отступ между пунктами списка */
+    display: list-item;
     position: relative;
+    margin-bottom: 10px;
+    padding-left: 40px;
+        /* Регулируйте отступ, чтобы маркер не перекрывал текст */
+    line-height: 1.5;
+    /* margin-bottom: 10px;
+    margin-top: 60px; */
+    /* Отступ между пунктами списка */
+    /* position: relative; */
     /* Позиционируем, чтобы можно было добавить изображение */
-
 }
 
-/* .li-icon-one{
-margin-top: 60px;
+.custom-list li:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    /* Размер маркера */
+    height: 20px;
+    /* Размер маркера */
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* .custom-list p{
+vertical-align: top;
+margin-bottom: 200px;
+} */
+
+.li-icon-one {
+font-size: 45px;
 
 list-style-image: url('/IMG/icon/calendar.png');
 }
 
 .li-icon-two{
-margin-top: 60px;
-list-style-image: url('img/icon/time.png');
+font-size: 45px;
+list-style-image: url('/IMG/icon/time.png');
 }
 
 .li-icon-three{
-margin-top: 60px;
-list-style-image: url('img/icon/online-learning.png');
-} */
-
-.custom-list li::before {
-    content: "";
-    /* Создаем псевдоэлемент для изображения */
-    display: inline-block;
-    width: 100px;
-    /* Размер изображения */
-    height: 100px;
-    background-image: url('/IMG/icon/calendar.png');
-    /* Замените на свою ссылку на изображение */
-    background-size: cover;
-    /* Размер изображения */
-    position: absolute;
-    left: -100px;
-    /* Отступ изображения от текста */
-    top: 2px;
-    /* Выравнивание изображения относительно текста */
+list-style-image: url('/IMG/icon/online-learning.png');
 }
 
 
 
+.desc-right p {
+    font-size: 25px;
+    margin-top: 30px;
+    color: #001F59 ;
+    font-family: 'Courier New', Courier, monospace;
+    /* align-items: center; */
+    white-space: pre ;
+}
 
 
+
+/* 
+
+*/
