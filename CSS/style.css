@@ -249,64 +249,50 @@ header a {
 font-weight: 700;
 }
 
-.custom-list{
+
+.custom-list {
     font-size: 35px;
-    /* margin-top: 60px; */
-    /* list-style-type: none; */
-    /* Убираем стандартные маркеры списка */
     padding-left: 0;
     list-style-type: none;
-    /* text-align: justify ; */
-    /* Убираем отступ слева */
 }
+
 .custom-list li {
-    display: list-item;
     position: relative;
     margin-bottom: 10px;
-    padding-left: 40px;
-        /* Регулируйте отступ, чтобы маркер не перекрывал текст */
     line-height: 1.5;
-    /* margin-bottom: 10px;
-    margin-top: 60px; */
-    /* Отступ между пунктами списка */
-    /* position: relative; */
-    /* Позиционируем, чтобы можно было добавить изображение */
+    white-space: nowrap;
+
 }
 
 .custom-list li:before {
     content: "";
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 20px;
+    display: inline-block;
+    width: 128px;
     /* Размер маркера */
-    height: 20px;
+    height: 128px;
     /* Размер маркера */
+    margin-right: 10px;
+    /* Отступ между маркером и текстом */
     background-size: contain;
     background-repeat: no-repeat;
+    vertical-align: middle;
 }
 
-/* .custom-list p{
-vertical-align: top;
-margin-bottom: 200px;
-} */
-
-.li-icon-one {
-font-size: 45px;
-
-list-style-image: url('/IMG/icon/calendar.png');
+.li-icon-one:before {
+    margin-left: -128px;
+    background-image: url('/IMG/icon/calendar.png');
+    
 }
 
-.li-icon-two{
-font-size: 45px;
-list-style-image: url('/IMG/icon/time.png');
+.li-icon-two:before {
+    margin-left: -128px;
+    background-image: url('/IMG/icon/time.png');
 }
 
-.li-icon-three{
-list-style-image: url('/IMG/icon/online-learning.png');
+.li-icon-three:before {
+    margin-left: -128px;
+    background-image: url('/IMG/icon/online-learning.png');
 }
-
 
 
 .desc-right p {
@@ -314,10 +300,15 @@ list-style-image: url('/IMG/icon/online-learning.png');
     margin-top: 30px;
     color: #001F59 ;
     font-family: 'Courier New', Courier, monospace;
-    /* align-items: center; */
-    white-space: pre ;
+    text-align: start;
 }
 
+.desc-left h3 {
+    font-size: 35px;
+    color: #001F59;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 400;
+}
 
 
 /* 
