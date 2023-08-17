@@ -404,7 +404,8 @@ list-style-type: disc;
 
 .list {
     padding: 20px;
-    border: 1px solid #ccc;
+    margin-bottom: 60px;
+    border: 1px solid #df0707;
     
 }
 
@@ -457,6 +458,22 @@ list-style-type: disc;
 .right-list-one .with-icon::before {
     background-image: url('/IMG/icon/magnifying-glass.png');
     /* Изображение для списка справа */
+}
+
+.container_for_whom_REGISTER{
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-flex_for_whom{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.btn-flex_for_whom a{
+    color: #ffffff;
+    background-color:#001F59;
 }
 
 
