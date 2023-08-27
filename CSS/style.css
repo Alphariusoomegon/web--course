@@ -535,3 +535,26 @@ list-style-type: disc;
     font-size: 30px;
     font-weight: 900;
 }
+
+/* registration*/
+
+
+.registration{
+    display: flex;
+}
+.registration_container_left  {
+    display: block;
+    height: 100%;
+    
+    
+    
+    
+}
+.registration_container_left h3{
+/* margin-bottom: auto; */
+}
+/* .registration_container_left_one{
+display: flex;
+align-items: flex-end;
+} */
+
