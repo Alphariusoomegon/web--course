@@ -19,8 +19,13 @@ h6 {
     padding: 0;
     margin: 0;
     text-transform: uppercase;
+    color:#001F59;
+    font-weight: 100;
+    
+
 }
 
+h1,
 h2 {
     font-size: 100px;
     margin-bottom: 58px;
@@ -144,7 +149,7 @@ header a {
     margin-top: -50px;
 }
 
-.offer h1 {
+.offer h2 {
     font-size: 42px;
     /* margin-bottom: 19px; */
     margin-top: 40px;
@@ -170,10 +175,10 @@ header a {
 }
 
 
-/* .span-text{
-    
+.span-text{
+   color: #ffffff; 
 
-} */
+}
 
 /* Z INDEX  */
 
@@ -185,7 +190,7 @@ header a {
     letter-spacing: 0.1em;
     padding: 17px 47px;
     border: 1px solid #fff;
-    width: 270px;
+    width: 370px;
     transition: all 0.5s ease;
     border-radius: 40px;
     margin-top: 50px;
@@ -213,6 +218,11 @@ header a {
 .desc-left,
 .desc-right {
     width: 567px;
+    border: 1px solid #df0707;
+}
+
+.desc-left ul{
+    margin-left: 130px;
 }
 
 .laptop{
@@ -476,7 +486,52 @@ list-style-type: disc;
     background-color:#001F59;
 }
 
+.container_for_whom_REGISTER h3{
+    font-weight: 800;
+    color: #F9D407;
+    font-size: 50px;
+    text-align: center;
+    margin: 40px;
+    
+}
 
+/* .price_right{
+    margin-left: auto;
+} */
 
+.price{
+    text-align: center;
+    width: 400px;
+    font-size: 18px;
+}
+
+.price p{
+    margin-bottom: 20px;
+    color: #001F59;
+}
 /* */
+.price_1{
+    display: flex;
+    justify-content: space-around;
+}
 
+
+.price_radius {
+    text-align: center;
+    width: 400px;
+    height: 80px;
+    background-color: #001F59;
+    border-radius: 50%;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.ul_price{
+    padding-top: 10px;
+}
+
+.ul_price :first-child{
+    color: #F9D407;
+    font-size: 30px;
+    font-weight: 900;
+}
