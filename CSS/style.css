@@ -1,0 +1,717 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Anton', sans-serif;
+    color: black;
+    font-size: 16px;
+    /* min-width:  1440px; */
+}
+
+* {
+    
+    box-sizing: border-box;
+    border: 1px solid #df0707;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+    color:#001F59;
+    font-weight: 100;
+    /* hyphens: auto;
+     */
+
+}
+
+/* @media screen and (min-width: 400px) and (max-width: 920px){
+    
+    h2 {
+            font-size: 50px;
+            }
+} */
+
+h1,
+h2 {
+    font-size: 7vw;
+    margin-bottom: 58px;
+}
+
+h3 {
+    font-size: 2.2vw;
+    margin-bottom: 28px;
+}
+
+a {
+    text-decoration: none;
+}
+
+section {
+    padding-top: 113px
+}
+
+p {
+    margin: 0;
+}
+
+ul,
+li {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+/* медиа запрос на изменненеия флекси  */
+
+.container {
+    /* width: 1440px; */
+    /* max-width: 1440px; */
+    /* width: 100%; */
+    /*позиционирование по центру*/
+    /* margin: 0 auto;
+    border: 1px solid #df0707; */
+
+    max-width: 1440px;
+    /* Максимальна ширина контейнера */
+    margin: 0 auto;
+    /* Позиціонування по центру */
+    padding: 0 20px;
+    /* Внутрішні відступи зліва та справа */
+    box-sizing: border-box;
+    /* Враховувати padding у розрахунку ширини */
+
+}
+
+/* .header {
+    background: url('../img//fons/header-bg.png') no-repeat center top / cover;
+    padding-top: 57px;
+    color: #fff;
+    padding-bottom: 322px;
+    
+} */
+
+.header {
+    position: relative;
+    background: url('../img/fons/header-bg.png') no-repeat center top / cover;
+    padding-top: 57px;
+    color: #fff;
+    z-index: 0;
+    padding-bottom: 322px;
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(3, 2, 63, 0.748);
+    /* Здесь можно настроить цвет и прозрачность */
+    z-index: -1;
+    
+}
+
+
+header a {
+    color: #fff;
+}
+
+.logo { 
+    margin-right: 69px;
+    width: 10%;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+  }
+
+.nav .logo-Wellcom{
+    margin-left: auto;
+    width: 18%;
+
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li a {
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+}
+
+.menu li a:hover {
+    border-bottom: 1px solid #fff;
+}
+
+.menu li {
+    margin-right: 40px;
+}
+
+
+
+.offer {
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    text-transform: uppercase;
+    margin-top: 216px;
+}
+
+.offer p {
+    font-size: 2vw;
+    letter-spacing: 0.1em;
+    margin-left: 170px;
+    margin-top: -50px;
+}
+
+.offer h2 {
+    font-size: 42px;
+    /* margin-bottom: 19px; */
+    margin-top: 40px;
+    margin-left: -30px;
+    letter-spacing: 0.02em;
+    justify-content: center;
+    align-items: center;
+}
+
+.offer .btn-flex{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.logo-IT{
+    display: flex;
+
+}
+
+.logo-IT-img{
+    height: 14vw;
+    width: 14vw;
+}
+
+
+.span-text{
+   color: #ffffff; 
+
+}
+
+/* Z INDEX  */
+
+.btn {
+    justify-content: center;
+    display: block;
+    font-size: 17px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    padding: 17px 47px;
+    border: 1px solid #fff;
+    width: 370px;
+    transition: all 0.5s ease;
+    border-radius: 40px;
+    margin-top: 50px;
+    
+}
+
+.btn:hover {
+    background: #fff;
+    color: #000;
+    
+}
+
+.description {
+    display: flex;
+    /* justify-content: space-between; */
+    /* flex-direction: column-reverse; */
+    justify-content: space-around;
+}
+
+.description p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    text-align: justify;
+    line-height: 1.62em;
+}
+
+.desc-left,
+.desc-right {
+    max-width: 567px;
+    border: 1px solid #df0707;
+    margin: 5px;
+}
+
+.desc-left ul{
+    margin-left: 130px;
+}
+
+.laptop{
+    min-height: 80px;
+    width: 100%;
+    border-radius: 0px 80px 10px 10px;
+}
+
+.gallery {
+    margin-top: 67px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.gallery img {
+    transition: all 0.5s ease;
+}
+
+.gallery img:hover {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    transform: scale(1.1);
+}
+
+.footer-text {
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    padding: 114px 0
+}
+
+.footer-text p {
+    margin-right: 67px;
+}
+
+.span-bolt{
+font-weight: 700;
+}
+
+.span-bolt-one{
+  margin-left: 70px;  
+}
+
+
+.custom-list {
+    padding-left: 100px;
+    font-size: 2.2vw;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.custom-list p{
+    /* position: relative; */
+    margin-bottom: 10px;
+    line-height: 1.5;
+    white-space: nowrap;
+
+}
+
+.custom-list p:before {
+    content: "";
+    display: inline-block;
+    width: 7vw;
+    /* Размер маркера */
+    height: 7vw;
+    /* Размер маркера */
+    margin-right: 10px;
+    /* Отступ между маркером и текстом */
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+}
+
+.li-icon-one:before {
+    /* margin-left: -128px; */
+    background-image: url('/IMG/icon/calendar.png');
+    
+}
+
+.li-icon-two:before {
+    /* margin-left: -128px; */
+    background-image: url('/IMG/icon/time.png');
+}
+
+.li-icon-three:before {
+    /* margin-left: -128px; */
+    background-image: url('/IMG/icon/online-learning.png');
+}
+
+
+.desc-right p {
+    font-size: 2vw;
+    margin-top: 30px;
+    color: #001F59 ;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: start;
+}
+
+.desc-left h3 {
+    /* font-size: 3vw; */
+    color: #001F59;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 400;
+}
+
+/*  */
+.container_background{
+    margin: 0 auto;
+    /* display: flex; */
+    width: 100%;
+    /* min-height: 1200px; */
+    max-height: 2000px;
+    background: linear-gradient(to right,rgb(224, 224, 223), 50%, rgb(249, 212, 7));
+    
+}
+
+.container_header_about_course{
+    display: flex;
+}
+
+.container_header_about_course h2{
+    margin-top: 80px;
+    
+}
+
+.logo-Wellcom_2{
+   height: 15vw;
+   margin: auto;
+   margin-right: 0;
+}
+
+.container_ul{
+    display: flex;
+    font-size: 2vw;   
+    hyphens: auto;
+}
+
+.container_ul ul{
+/* display: list-item; */
+    list-style-type: disc;
+    border-top:3px solid #000;
+
+/* margin-bottom: 50px; */
+    padding-bottom: 50px;
+}
+
+.container_ul ul:last-child{
+   border-bottom: 3px solid #000; 
+}
+
+.container_ul_right{
+    max-width: 43%;
+    margin-left: auto;
+}
+
+.container_ul_right li{
+    display: list-item;
+    list-style-type: disc;
+}
+
+.container_ul_right ul:last-child{
+    height: 250px;
+}
+
+.container_ul_left{  
+    max-width: 42%;
+}
+
+.container_ul_left li
+{
+    display: list-item;
+    list-style-type: disc;
+}
+
+/*  */
+
+            
+
+.section_for_whom {
+    display: flex;
+    justify-content: space-between;
+    /* margin:0; */
+}
+
+
+.left-list-container{
+    display: flex;
+    flex-direction: column;
+    max-width: 48%;
+}
+
+.right-list-container{
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+}
+
+
+.list {
+    padding: 20px;
+    margin-bottom: 60px;
+    border: 1px solid #df0707;
+    
+}
+
+.list p{
+    font-size: 18px;
+    padding-left: 135px;
+    margin-top: -50px;
+}
+
+.right-list{
+    height: 171px;
+}
+
+.list h3 {
+    font-size: 2vw;
+    color:#F9D407;
+    margin-bottom: 10px;
+}
+
+.with-icon::before {
+    content: '';
+    display: inline-block;
+    width: 7vw;
+    /* Размер маркера */
+    height: 7vw;
+    /* Размер маркера */
+    margin-right: 10px;
+    /* Отступ между маркером и текстом */
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+}
+
+.left-list .with-icon::before {
+    background-image: url('/IMG/icon/eye.png');
+    /* Изображение для списка слева */
+}
+
+.left-list-one .with-icon::before {
+    background-image: url('/IMG/icon/student-with-graduation-cap.png');
+    /* Изображение для списка слева */
+}
+
+
+.right-list .with-icon::before {
+    background-image: url('/IMG/icon/briefcase.png');
+    /* Изображение для списка справа */
+}
+
+.right-list-one .with-icon::before {
+    background-image: url('/IMG/icon/magnifying-glass.png');
+    /* Изображение для списка справа */
+}
+
+.container_for_whom_REGISTER{
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-flex_for_whom{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.btn-flex_for_whom a{
+    color: #ffffff;
+    background-color:#001F59;
+}
+
+.container_for_whom_REGISTER h3{
+    font-weight: 800;
+    color: #F9D407;
+    font-size: 4vw;
+    text-align: center;
+    margin: 40px;
+    
+}
+
+/* .price_right{
+    margin-left: auto;
+} */
+
+.price{
+    text-align: center;
+    width: 400px;
+    font-size: 18px;
+}
+
+.price p{
+    margin-bottom: 20px;
+    color: #001F59;
+}
+/* */
+.price_1{
+    display: flex;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 820px) {
+.price_1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+.with-icon::before {
+    
+    width: 60px;
+    /* Размер маркера */
+    height: 60px;}
+
+}
+
+/* @media screen and (max-width: 800px) {
+    p,
+    ul,
+    li{
+      font-size:1vw;  
+    }
+} */
+
+
+@media screen and (min-width: 1200px) {
+    h1,
+    h2 {
+        font-size: 100px;
+    }
+}
+
+
+
+.price_radius {
+    text-align: center;
+    width: 400px;
+    height: 80px;
+    background-color: #001F59;
+    border-radius: 50%;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.ul_price{
+    padding-top: 10px;
+}
+
+.ul_price :first-child{
+    color: #F9D407;
+    font-size: 2vw;
+    font-weight: 900;
+}
+
+/* registration*/
+
+.container_input{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.container_registration_left{
+    padding-top: 80px;
+    height: 1000px;
+    max-width: 650px;
+    display: flex;
+    justify-content: space-between;
+    border: 5px solid #f0eded;
+    flex-direction: column;
+    
+}
+
+.container_registration_left_one{
+    display: block;
+    border: 1px solid #e53333;
+    /* margin: 4% 0; */
+    margin: 50px 0px;
+    
+}
+
+.container_registration_left_one h4{
+    font-size: vw;
+    Text-Transform: Capitalize
+}
+
+.container_registration_left_one p{
+    font-size: 2vw;
+    color: #001F59;
+}
+
+.input_form{
+    /* display: flex;
+    flex-direction: column;
+    margin-left: auto; */
+    width: 50%;
+    /* min-width: 190px; */
+    margin:  auto;
+}
+
+  .text-field {
+      margin-bottom: 4rem;
+      width: 90%;
+
+  }
+
+  .text-field__label {
+      display: block;
+      margin-bottom: 0.25rem;
+      height: 3rem;
+      width: 40%;
+      min-width: 160px;
+      margin-left: 10px;
+      background-color:#001F59;
+      color: #ffffff;
+      font-size: 1.3rem;
+  }
+
+  .text-field__input {
+      display: block;
+      width: 90%;
+      height: calc(4.25rem + 2px);
+      padding: 0.375rem 0.75rem;
+      font-family: inherit;
+      font-size: 1.7rem;
+      font-weight: 400;
+      line-height: 1.5;
+      color: #2c5b8b;
+      background-color: #f9d50725;
+      background-clip: padding-box;
+      border: 1px solid #000000;
+      border-radius: 0.55rem;
+      transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+
+  .text-field__input::placeholder {
+      color: #212529;
+      opacity: 0.4;
+  }
+
+  .text-field__input:focus {
+      color: #212529;
+      background-color: #fff;
+      border-color: #800000;
+      outline: 0;
+      box-shadow: 0 0 0 0.2rem rgba(158, 158, 158, 0.25);
+  }
+
+  .checkbox{
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+ 
+  .checkbox_text{
+    font-size: 1.2rem;
+    hyphens: manual;
+  }
+
+
+/* footer */
+  .footer{
+    min-height: 300px;
+    background-color:#001F59;
+  }
