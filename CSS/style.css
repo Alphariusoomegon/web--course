@@ -403,7 +403,7 @@ text-align: center;
 }
 
 .container_ul_right ul:last-child{
-    height: 250px;
+    max-height: 250px;
 }
 
 .container_ul_left{  
@@ -780,4 +780,5 @@ text-align: center;
 .footer_container_instagram img{
     margin: 10px 10px;
 }
+
 
