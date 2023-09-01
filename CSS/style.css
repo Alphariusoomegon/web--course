@@ -412,7 +412,7 @@ font-weight: 700;
 }
 
 .container_ul_right ul:last-child{
-    height: 250px;
+    max-height: 250px;
 }
 
 .container_ul_left{  
