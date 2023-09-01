@@ -63,18 +63,18 @@
                     та почати зростати професійно</h3>
                   
                 
-                    <ul class="custom-list">
-                        <li class="li-icon-one">Тривалість навчання:
-                            <!-- <span class="span-bolt">3 місяці <br>
-                            24 заняття</span> -->
-                        </li>
-                        <li class="li-icon-two">Заняття
+                    <div class="custom-list">
+                        <p class="li-icon-one">Тривалість навчання:<br>
+                            <span class="span-bolt span-bolt-one">3 місяці</span> <br>
+                                <span class="span-bolt span-bolt-one">24 заняття</span>
+                        </p>
+                        <p class="li-icon-two">Заняття 
                             <span class="span-bolt">у вихідні дні <br>
                         </span>
-                            Тривалість:<span class="span-bolt">80 хвилин </span>
-                        </li>
-                        <li class="li-icon-three"><span class="span-bolt">On-line та Off-line</span> формат</li>
-                    </ul>
+                            <span class="span-bolt-one">Тривалість:</span><span class="span-bolt">80 хвилин </span>
+                        </p>
+                        <p class="li-icon-three"><span class="span-bolt">On-line та Off-line</span> формат</p>
+                    </div>
                 </div>
                 <div class="desc-right">
                     <img  class="laptop" src="img/fons/fonPC.png" alt="Event photo 1">
@@ -155,7 +155,7 @@
 
     </section>
 
-    <section id="for_whom" class="for_whom" >
+    <!-- <section id="for_whom" class="for_whom" >
         <div class="container">
             <h2>ДЛЯ КОГО КУРС?</h2>
                 <div class="section_for_whom">
@@ -202,7 +202,7 @@
                 <h3>ВАРТІСТЬ ІТ-МУЛЬТИКУРСУ</h3>  
                 
             <div class="price_1">
-   <!-- _left -->
+ 
             <div class="price">
                 <p>Вартість ОДНОГО заняття</p>
                     <div class="price_radius">
@@ -214,7 +214,7 @@
 
                     </div>
             </div>
-<!-- _right -->
+
             <div class="price">
                 <p>Вартість ВСЬОГО курсу</p>
                     <div class="price_radius">
@@ -230,7 +230,7 @@
         </div>
                 </div>
         </div>
-    </section>
+    </section> -->
 
 <section id="registration" class="registration ">
     <div class="container_background">
@@ -242,7 +242,7 @@
 
             <div class="container_registration_left_one">
                 
-            <h4>Успішний старт в ІТ</h4>  
+            <h3>Успішний старт в ІТ</h3>  
             <p>починається зі відомого вибору</p>
             </div>
 
@@ -253,9 +253,23 @@
 
 
             <div class="input_form">
-                <input type="text">
-                <input type="number">
-                <input type="email">
+                <form class="text-field" name="simple form" autocomplete="on">
+                <label class="text-field__label" for="firstname">Ім'я та Прізвище </label>
+                <input class="text-field__input" type="text" name="username" id="username" placeholder="Username">
+                </form>
+
+                <form class="text-field" name="simple form2" autocomplete="on">
+                <label class="text-field__label" for="firstname">E-mail</label>
+                <input class="text-field__input" type="number" placeholder="E-mail">
+                </form>
+
+                <form class="text-field" name="simple form3" autocomplete="on">
+                <label class="text-field__label" for="firstname">Номер телефону</label>
+                <input class="text-field__input" type="email" placeholder="+380"> 
+                </form>
+
+                <input class="checkbox" type="checkbox" id="agreement" name="agreement" checked />
+                <label  class="checkbox_text" for="agreement">Даю згоду на обробку персональних данних</label>
             </div>
 
             

@@ -39,7 +39,7 @@ h6 {
 
 h1,
 h2 {
-    font-size: 10vw;
+    font-size: 7vw;
     margin-bottom: 58px;
 }
 
@@ -290,22 +290,27 @@ header a {
 font-weight: 700;
 }
 
+.span-bolt-one{
+  margin-left: 70px;  
+}
+
 
 .custom-list {
+    padding-left: 100px;
     font-size: 2.2vw;
     padding-left: 0;
     list-style-type: none;
 }
 
-.custom-list li {
-    position: relative;
+.custom-list p{
+    /* position: relative; */
     margin-bottom: 10px;
     line-height: 1.5;
     white-space: nowrap;
 
 }
 
-.custom-list li:before {
+.custom-list p:before {
     content: "";
     display: inline-block;
     width: 7vw;
@@ -320,18 +325,18 @@ font-weight: 700;
 }
 
 .li-icon-one:before {
-    margin-left: -128px;
+    /* margin-left: -128px; */
     background-image: url('/IMG/icon/calendar.png');
     
 }
 
 .li-icon-two:before {
-    margin-left: -128px;
+    /* margin-left: -128px; */
     background-image: url('/IMG/icon/time.png');
 }
 
 .li-icon-three:before {
-    margin-left: -128px;
+    /* margin-left: -128px; */
     background-image: url('/IMG/icon/online-learning.png');
 }
 
@@ -638,7 +643,75 @@ font-weight: 700;
 }
 
 .input_form{
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    margin-left: auto;
+    margin-left: auto; */
+    width: 50%;
+    /* min-width: 190px; */
+    margin:  auto;
 }
+
+  .text-field {
+      margin-bottom: 4rem;
+      width: 90%;
+
+  }
+
+  .text-field__label {
+      display: block;
+      margin-bottom: 0.25rem;
+      height: 3rem;
+      width: 40%;
+      min-width: 160px;
+      margin-left: 10px;
+      background-color:#001F59;
+      color: #ffffff;
+      font-size: 1.3rem;
+  }
+
+  .text-field__input {
+      display: block;
+      width: 90%;
+      height: calc(4.25rem + 2px);
+      padding: 0.375rem 0.75rem;
+      font-family: inherit;
+      font-size: 1.7rem;
+      font-weight: 400;
+      line-height: 1.5;
+      color: #2c5b8b;
+      background-color: #f9d50725;
+      background-clip: padding-box;
+      border: 1px solid #000000;
+      border-radius: 0.55rem;
+      transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+
+  .text-field__input::placeholder {
+      color: #212529;
+      opacity: 0.4;
+  }
+
+  .text-field__input:focus {
+      color: #212529;
+      background-color: #fff;
+      border-color: #800000;
+      outline: 0;
+      box-shadow: 0 0 0 0.2rem rgba(158, 158, 158, 0.25);
+  }
+
+  .checkbox{
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+ 
+  .checkbox_text{
+    font-size: 1.2rem;
+    hyphens: manual;
+  }
+
+
+/* footer */
+  .footer{
+    min-height: 300px;
+    background-color:#001F59;
+  }
