@@ -10,7 +10,7 @@ body {
 * {
     
     box-sizing: border-box;
-    border: 1px solid #df0707;
+    /* border: 1px solid #df0707; */
 }
 
 h1,
@@ -170,7 +170,7 @@ header a {
 .offer p {
     font-size: 2vw;
     letter-spacing: 0.1em;
-    margin-left: 170px;
+    margin-left: 200px;
     margin-top: -50px;
 }
 
@@ -246,7 +246,7 @@ header a {
 .desc-left,
 .desc-right {
     max-width: 567px;
-    border: 1px solid #df0707;
+    /* border: 1px solid #df0707; */
     margin: 5px;
 }
 
@@ -281,7 +281,8 @@ font-weight: 700;
 }
 
 .span-bolt-one{
-  margin-left: 70px;  
+  /* margin-left: 70px;   */
+text-align: center;
 }
 
 
@@ -446,8 +447,9 @@ font-weight: 700;
 .list {
     padding: 20px;
     margin-bottom: 60px;
-    border: 1px solid #df0707;
     
+    /* border: 1px solid #df0707;
+     */
 }
 
 /* .list p{
@@ -460,10 +462,13 @@ font-weight: 700;
     height: 171px;
 }
 
-.list h3 {
-    font-size: 2vw;
-    color:#F9D407;
+.with-icon {
+    font-size: 30px;
+    color:#f9d507;
     margin-bottom: 10px;
+}
+.text-align-suka{
+    text-align: center;
 }
 
 .with-icon::before {
@@ -485,7 +490,7 @@ font-weight: 700;
 .left-list-one,
 .right-list,
 .right-list-one{
-    height: 190px;
+    height: 225px;
 }
 
 
@@ -621,14 +626,14 @@ font-weight: 700;
     max-width: 650px;
     display: flex;
     justify-content: space-between;
-    border: 5px solid #f0eded;
+    /* border: 5px solid #f0eded; */
     flex-direction: column;
     
 }
 
 .container_registration_left_one{
     display: block;
-    border: 1px solid #e53333;
+    /* border: 1px solid #e53333; */
     /* margin: 4% 0; */
     margin: 50px 0px;
     
@@ -714,11 +719,18 @@ font-weight: 700;
 
 /* footer */
   .footer{
+    margin-top: -50px;
     min-height: 300px;
     background-color:#001F59;
     color: #ffffff;
   }
 
+  .footer .container{
+    margin-top: 50px;
+  }
+    .border-top-suka{
+    height:  50px;
+    }
   .footer-text{
     display: flex;
     align-items: flex-end;
@@ -758,7 +770,7 @@ font-weight: 700;
   }
 
 .footer_container_ul{
-    margin: 0 10px;
+    margin: 10px 10px;
 }
 
 .footer_container_instagram{
@@ -768,3 +780,4 @@ font-weight: 700;
 .footer_container_instagram img{
     margin: 10px 10px;
 }
+
