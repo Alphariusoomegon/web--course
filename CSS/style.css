@@ -170,8 +170,9 @@ header a {
 .offer p {
     font-size: 2vw;
     letter-spacing: 0.1em;
-    margin-left: 200px;
+    text-align: center;
     margin-top: -50px;
+    margin-right: 120px;
 }
 
 .offer h2 {
