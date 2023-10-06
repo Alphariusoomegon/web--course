@@ -656,7 +656,7 @@ text-align: center;
 }
 
 .container_registration_left_one h3{
-    font-size: 4.3vw;
+    font-size: 4vw;
     Text-Transform: Capitalize
 }
 
@@ -723,6 +723,7 @@ text-align: center;
   }
 
   .checkbox{
+    margin-top: 20px;
     width: 1.2rem;
     height: 1.2rem;
   }
@@ -800,3 +801,18 @@ text-align: center;
 }
 
 
+.input_form .btn{
+background-color:#001F59;
+color: #ffffff;
+}
+
+
+
+
+label.error {
+    display: none !important;
+}
+
+form input.error {
+    border-color: red;
+}
