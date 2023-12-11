@@ -89,6 +89,27 @@ li {
 
 }
 
+
+.container-2 {
+    /* width: 1440px; */
+    /* max-width: 1440px; */
+    /* width: 100%; */
+    /*позиционирование по центру*/
+    /* margin: 0 auto;
+    border: 1px solid #df0707; */
+    max-height: 500px;
+    max-width: 1440px;
+    /* Максимальна ширина контейнера */
+    margin: 0 auto;
+    /* Позиціонування по центру */
+    padding: 0 20px;
+    /* Внутрішні відступи зліва та справа */
+    box-sizing: border-box;
+    /* Враховувати padding у розрахунку ширини */
+
+}
+
+
 /* .header {
     background: url('../img//fons/header-bg.png') no-repeat center top / cover;
     padding-top: 57px;
